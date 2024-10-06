@@ -20,6 +20,8 @@ const intervalValid = setInterval(() => {
 }, 500);
 
 function winingMessage(winMessage) {
+    const winAudio = document.getElementById('winAudio');
+    winAudio.play();
     message.textContent = winMessage;
     setInterval(() => {
         if (message.style.visibility === "hidden") {
